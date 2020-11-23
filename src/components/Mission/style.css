@@ -1,0 +1,39 @@
+.Missions {
+  height: 100vh;
+  height:100%;
+  background-color: #ececec;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Heading {
+  text-align: center;
+  font-weight: bold !important;
+  padding: 20px 0;
+  text-decoration: underline;
+}
+
+.Missions_List {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Missions_List_Name {
+  font-weight: bold !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #919191;
+  cursor: pointer;
+}
+
+.Missions_List_Name:hover {
+  background-color: #b3b3b3;
+}
+
+.Success {
+  color: green;
+}
+
+.Failure {
+  color: red;
+}

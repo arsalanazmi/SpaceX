@@ -1,0 +1,58 @@
+.Mission_Details {
+  height: 100vh;
+  max-height: 100%;
+  overflow: hidden auto;
+  margin-top: 5%;
+  padding-right: 15px;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Mission_Details {
+    margin-top: 8%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Mission_Details {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .Mission_Details {
+    margin-top: 12%;
+    padding-right: 5px;
+  }
+}
+.heading {
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+.Misson_Info {
+  padding-top: 10px;
+}
+.Mission {
+  display: flex;
+}
+.Mission_Heading {
+  font-weight: bold !important;
+}
+.Mission_Status_Succeess {
+  color: green;
+}
+.Mission_Status_Failure {
+  color: red;
+  font-weight: bold !important;
+}
+
+.Mission_Image_List {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+.Mission_Video{
+  margin: 20px auto;
+}
+.Mission_Image {
+  width: 100%;
+  height: 50vh;
+}
