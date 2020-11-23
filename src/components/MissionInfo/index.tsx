@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { useLaunchMissionInfoQuery } from './../../generated/graphql'
 import MissionInfo from './MissionInfo'
 import { makeStyles, Typography } from "@material-ui/core";
@@ -18,12 +18,12 @@ interface OwnProps {
 const MissionInfoContainer = ({ id }: OwnProps) => {
     const classes = useStyles();
 
-    const { data, loading, error, refetch } = useLaunchMissionInfoQuery({
+    const { data, loading, error} = useLaunchMissionInfoQuery({
         variables: { id: String(id) },
     });
-    useEffect(() => {
-        refetch();
-    }, [id])
+    // useEffect(() => {
+    //     refetch();
+    // }, [id])
 
     if (loading)
         return <Typography variant="h5" className={classes.fetching}> Loading... </Typography>
